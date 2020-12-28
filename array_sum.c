@@ -13,10 +13,12 @@ char** split_string(char*);
  * Complete the simpleArraySum function below.
  */
 int simpleArraySum(int ar_count, int* ar) {
-    /*
-     * Write your code here.
-     */
-
+    int result=0;
+    for(int i=0;i<ar_count;i++){
+        result+=*ar;
+        ar++;
+    }
+    return result;
 }
 
 int main()
